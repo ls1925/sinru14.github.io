@@ -6,16 +6,14 @@ body {
   background-size: cover;
 }
 h1 {
-  color: rgb(4, 8, 58);
+  color: rgb(13, 20, 114);
 }
 h2 {
   color: rgb(0, 65, 20);
   background-color: rgb(168, 224, 219);
   width: 300px;
   height: 100px;
-  /*padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 1em;
-    padding-right: 15px;*/
-  padding: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
