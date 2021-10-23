@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base target="_blank" />
+    <!-- <base target="_blank" /> -->
     <title>Sin Ru's Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -118,7 +118,7 @@
       <br />
       <h3>Then,what is your interest?</h3>
       <table>
-        <tr>
+        <tr aria-colspan="2">
           <td colspan="2">
             <input type="checkbox" id="checkbox" name="favorite" value="ball" />
             <label for="checkbox">play ball</label>
@@ -142,14 +142,12 @@
         </tr>
         <br />
       </table>
-      <table>
-        <tr>
-          <th colspan="3">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-          </th>
-        </tr>
-      </table>
+      <tr aria-colspan="3">
+        <th colspan="3">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </th>
+      </tr>
     </form>
   </body>
 </html>
