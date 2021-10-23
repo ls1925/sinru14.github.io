@@ -5,12 +5,8 @@ body {
   background-image: url("https://agirls.aottercdn.com/media/20f2a623-d960-4903-9e6c-1d809586785a.jpg");
   background-size: cover;
 }
-h1 {
-  color: rgb(13, 20, 114);
-}
-h2 {
-  color: rgb(6, 110, 37);
-  background-color: rgb(168, 224, 219);
+title {
+  background-color: rgb(189, 188, 226);
   width: 300px;
   height: 100px;
   padding-top: 0px;
@@ -18,8 +14,13 @@ h2 {
   padding-right: 15px;
   padding-bottom: 0em;
 }
-title {
-  background-color: rgb(189, 188, 226);
+
+h1 {
+  color: rgb(13, 20, 114);
+}
+h2 {
+  color: rgb(6, 110, 37);
+  background-color: rgb(168, 224, 219);
   width: 300px;
   height: 100px;
   padding-top: 0px;
