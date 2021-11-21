@@ -143,6 +143,8 @@
         </tr>
         <br />
       </table>
+
+      <!-- undefined -->
       <script>
         $(document).ready(function () {
           $("#target1").css("color", "red");
@@ -150,32 +152,26 @@
           $(".target:odd").addClass("animated shake");
         });
       </script>
-      <!-- undefined -->
-
-      <tr>
-        <th colspan="3" align="center">
-          <div class="container-fluid">
-            <div class="colspan">
-              <div class="col-xs-6">
-                <button
-                  type="submit btn-default target"
-                  id="target1"
-                  aria-setsize="50%"
-                >
-                  Submit
-                </button>
-                <button
-                  type="reset btn-default target"
-                  id="target2"
-                  aria-setsize="50%"
-                >
-                  Reset
-                </button>
-              </div>
-            </div>
+      <div class="container-fluid">
+        <div class="colspan">
+          <div class="col-xs-6">
+            <button
+              type="submit btn-default target"
+              id="target1"
+              aria-setsize="50%"
+            >
+              Submit
+            </button>
+            <button
+              type="reset btn-default target"
+              id="target2"
+              aria-setsize="50%"
+            >
+              Reset
+            </button>
           </div>
-        </th>
-      </tr>
+        </div>
+      </div>
     </form>
   </body>
 </html>
