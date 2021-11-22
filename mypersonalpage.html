@@ -32,35 +32,28 @@
         padding-bottom: 0em;
       }
     </style>
-    <script
-      src="http://www.google.com/jsapi?key=abc"
-      type="text/javascript"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      google.load("jquery", "1");
-      google.setOnLoadCallback(function () {
-        $(document).ready(function () {
-          $("#foo").hide(1000);
-          $("#my-open-click").click(function () {
-            $("#foo").slideToggle(1000);
-            return false;
-          });
-          $("#foo2").hide(1000);
-          $("#my-open-click2").click(function () {
-            $("#foo2").slideToggle(1000);
-            return false;
-          });
+      // google.load("jquery", "1");
+      // google.setOnLoadCallback(function () {
+      $(document).ready(function () {
+        $("#foo").hide(1000);
+        $("#my-open-click").click(function () {
+          $("#foo").slideToggle(1000);
+          return false;
+        });
+        $("#foo2").hide(1000);
+        $("#my-open-click2").click(function () {
+          $("#foo2").slideToggle(1000);
+          return false;
         });
       });
     </script>
     <script>
-      google.load("jquery", "1");
-      google.setOnLoadCallback(function () {
-        $(document).ready(function () {
-          $("#target1").css("color", "red");
-          $(".target:nth-child(2)").addClass("animated bounce");
-          $(".target:odd").addClass("animated shake");
-        });
+      $(document).ready(function () {
+        $("#target1").css("color", "red");
+        $(".target:nth-child(2)").addClass("animated bounce");
+        $(".target:odd").addClass("animated shake");
       });
     </script>
   </head>
