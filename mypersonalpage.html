@@ -32,45 +32,83 @@
         padding-bottom: 0em;
       }
     </style>
+    <script
+      src="http://www.google.com/jsapi?key=abc"
+      type="text/javascript"
+    ></script>
+    <script>
+      google.load("jquery", "1");
+      google.setOnLoadCallback(function () {
+        $(document).ready(function () {
+          $("#foo").hide(1000);
+          $("#my-open-click").click(function () {
+            $("#foo").slideToggle(1000);
+            return false;
+          });
+          $("#foo2").hide(1000);
+          $("#my-open-click2").click(function () {
+            $("#foo2").slideToggle(1000);
+            return false;
+          });
+        });
+      });
+    </script>
+    <script>
+      google.load("jquery", "1");
+      google.setOnLoadCallback(function () {
+        $(document).ready(function () {
+          $("#target1").css("color", "red");
+          $(".target:nth-child(2)").addClass("animated bounce");
+          $(".target:odd").addClass("animated shake");
+        });
+      });
+    </script>
   </head>
   <body>
+    <script src="./page.js"></script>
     <form action="" method="GET">
       <h1>Welcome to Sin Ru's Personal Page</h1>
-      <h2>My favorite food</h2>
-      <table>
-        <tr>
-          <th>Stinky tofu</th>
-          <th>Egg drop soup</th>
-          <th>Lemon pie</th>
-        </tr>
-        <br />
-        <tr>
-          <th>
-            <img
-              src="https://travel.taichung.gov.tw/Utility/DisplayImage?id=1388"
-              width="300"
-              lengh="200"
-              alt="Stinky tofu"
-            />
-          </th>
-          <th>
-            <img
-              src="https://img.ltn.com.tw/Upload/food/page/2016/10/09/161009-4526-0-qRc4v.jpg"
-              width="300"
-              lengh="200"
-              alt="Egg drop soup"
-            />
-          </th>
-          <th>
-            <img
-              src="https://img.ltn.com.tw/Upload/food/page/2018/03/15/180315-7278-000-wgG1e.jpg"
-              width="300"
-              lengh="200"
-              alt="Lemon pie"
-            />
-          </th>
-        </tr>
-      </table>
+
+      <h2 id="my-open-click" class="button">
+        My favorite food
+        <a href="#"><font size="3px" color="white">(pick me)</font></a>
+      </h2>
+      <div id="foo">
+        <table>
+          <tr>
+            <th>Stinky tofu</th>
+            <th>Egg drop soup</th>
+            <th>Lemon pie</th>
+          </tr>
+          <br />
+          <tr>
+            <th>
+              <img
+                src="https://travel.taichung.gov.tw/Utility/DisplayImage?id=1388"
+                width="300"
+                lengh="200"
+                alt="Stinky tofu"
+              />
+            </th>
+            <th>
+              <img
+                src="https://img.ltn.com.tw/Upload/food/page/2016/10/09/161009-4526-0-qRc4v.jpg"
+                width="300"
+                lengh="200"
+                alt="Egg drop soup"
+              />
+            </th>
+            <th>
+              <img
+                src="https://img.ltn.com.tw/Upload/food/page/2018/03/15/180315-7278-000-wgG1e.jpg"
+                width="300"
+                lengh="200"
+                alt="Lemon pie"
+              />
+            </th>
+          </tr>
+        </table>
+      </div>
       <h3>Do you prefer sweet or salty?</h3>
       <table>
         <td>
@@ -80,41 +118,46 @@
         </td>
       </table>
       <br />
-      <h2>My hobby</h2>
-      <table>
-        <tr>
-          <th>Play basketball</th>
-          <th>Binge-watched</th>
-          <th>Listen to cello sonata or r&b</th>
-        </tr>
-        <br />
-        <tr>
-          <th>
-            <img
-              src="https://sportsplanetmag-aws.hmgcdn.com/public/article/atl_20190325160556_138.jpg"
-              width="300"
-              lengh="200"
-              alt="Play basketball"
-            />
-          </th>
-          <th>
-            <img
-              src="https://s.yimg.com/ny/api/res/1.2/pbfBb4hVgBPlWoIoM4AKRw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MA--/https://s.yimg.com/os/creatr-uploaded-images/2021-05/726ba3d0-bf83-11eb-baeb-581c85aedea2"
-              width="300"
-              lengh="200"
-              alt="Binge-watched"
-            />
-          </th>
-          <th>
-            <img
-              src="https://image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F3%2F8%2F4%2F3e213b9e-8624-402f-9e07-4718689272651587521899.jpg/?w=621"
-              width="300"
-              lengh="200"
-              alt="Listen to cello sonata or r&b"
-            />
-          </th>
-        </tr>
-      </table>
+      <h2 id="my-open-click2" class="button">
+        My hobby
+        <a href="#"><font size="3px" color="white">(pick me)</font></a>
+      </h2>
+      <div id="foo2">
+        <table>
+          <tr>
+            <th>Play basketball</th>
+            <th>Binge-watched</th>
+            <th>Listen to cello sonata or r&b</th>
+          </tr>
+          <br />
+          <tr>
+            <th>
+              <img
+                src="https://sportsplanetmag-aws.hmgcdn.com/public/article/atl_20190325160556_138.jpg"
+                width="300"
+                lengh="200"
+                alt="Play basketball"
+              />
+            </th>
+            <th>
+              <img
+                src="https://s.yimg.com/ny/api/res/1.2/pbfBb4hVgBPlWoIoM4AKRw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MA--/https://s.yimg.com/os/creatr-uploaded-images/2021-05/726ba3d0-bf83-11eb-baeb-581c85aedea2"
+                width="300"
+                lengh="200"
+                alt="Binge-watched"
+              />
+            </th>
+            <th>
+              <img
+                src="https://image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2F3%2F8%2F4%2F3e213b9e-8624-402f-9e07-4718689272651587521899.jpg/?w=621"
+                width="300"
+                lengh="200"
+                alt="Listen to cello sonata or r&b"
+              />
+            </th>
+          </tr>
+        </table>
+      </div>
       <br />
       <h3>Then,what is your interest?</h3>
       <table>
@@ -145,13 +188,7 @@
       </table>
 
       <!-- undefined -->
-      <script>
-        $(document).ready(function () {
-          $("#target1").css("color", "red");
-          $(".target:nth-child(2)").addClass("animated bounce");
-          $(".target:odd").addClass("animated shake");
-        });
-      </script>
+
       <div class="container-fluid">
         <div class="colspan">
           <div class="col-xs-6">
@@ -159,7 +196,6 @@
               class="btn btn-block btn-primary target"
               type="submit"
               id="target1"
-              aria-setsize="50%"
             >
               Submit
             </button>
@@ -167,7 +203,6 @@
               class="btn btn-block btn-primary target"
               type="reset"
               id="target2"
-              aria-setsize="50%"
             >
               Reset
             </button>
